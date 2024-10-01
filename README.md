@@ -36,9 +36,6 @@ A API está estruturada em dois principais recursos: **Clientes** e **Endereços
 - **Método**: `GET`
 - **Endpoint**: `/api/cliente/buscar/{cpf}`
 - **Descrição**: Busca um cliente específico pelo CPF.
-- **Resposta**: 
-  - **200 OK**: Retorna o cliente encontrado.
-  - **404 NOT FOUND**: Se o cliente não for encontrado.
 
 ### 3. Adicionar Novo Cliente
 - **Método**: `POST`
@@ -54,10 +51,6 @@ A API está estruturada em dois principais recursos: **Clientes** e **Endereços
     "telefone": "(21)99999-9999"
   }
   
-Resposta:
-201 CREATED: Retorna o cliente criado.
-400 BAD REQUEST: Se CPF ou e-mail já existirem.
-
 ### 4. Atualizar Cliente
 - **Método**: `PUT`
 - **Endpoint**: `/api/cliente/atualizar/{cpf}`
@@ -72,19 +65,10 @@ Resposta:
     "telefone": "(21)99999-9999"
   }
   ```
-  
-Respostas:
-200 OK: Retorna o cliente atualizado.
-404 NOT FOUND: Se o cliente não for encontrado.
-
 ### 5. Remover Cliente
 - **Método**: `DELETE`
 - **Endpoint**: `/api/cliente/{cpf}`
 - **Descrição**: Remove um cliente pelo CPF.
-  
-Respostas:
-204 NO CONTENT: Se removido com sucesso.
-404 NOT FOUND: Se o cliente não existir.
 
 ## Endereços
 
