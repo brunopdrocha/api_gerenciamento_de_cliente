@@ -88,7 +88,7 @@ Respostas:
 
 ## Endereços
 
-###1. Adicionar um novo endereço a um cliente
+### 1. Adicionar um novo endereço a um cliente
 
 - **URL**: `/api/cliente/{cpf}/endereco`
 - **Método**: `POST`
@@ -98,7 +98,7 @@ Respostas:
 
 - `{cpf}`: CPF do cliente.
 
-### Corpo da Requisição:
+### Body:
 
 ```json
 {
@@ -132,7 +132,7 @@ Respostas:
 {cpf}: CPF do cliente.
 {cep}: CEP do endereço a ser atualizado.
 
-### Corpo da Requisição:
+### Body:
 
 ```json
 {
@@ -149,7 +149,7 @@ Respostas:
 ## 4. Deletar um endereço de um cliente por CEP
 - **URL**: `/api/cliente/{cpf}/endereco/{cep}`
 - **Método**: `DELETE`
-- 
+  
 ### Parâmetros:
 {cpf}: CPF do cliente.
 {cep}: CEP do endereço a ser deletado.
@@ -162,8 +162,7 @@ Respostas:
 
 ## Cliente 
 
-json 
-```
+```json
 {
   "cpf": "string",
   "nome": "string",
@@ -177,8 +176,7 @@ json
 
 ## Endereço
 
-json
-```
+```json
 {
   "cep": "string",
   "rua": "string",
