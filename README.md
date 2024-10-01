@@ -126,6 +126,7 @@ Respostas:
 ## 3. Atualizar um endereço de um cliente por CEP
 - **URL**: `/api/cliente/{cpf}/endereco/{cep}`
 - **Método**: `PUT`
+- **Descrição**: Atualiza informações de determinado cep do cliente.
   
 ### Parâmetros:
 
@@ -149,6 +150,7 @@ Respostas:
 ## 4. Deletar um endereço de um cliente por CEP
 - **URL**: `/api/cliente/{cpf}/endereco/{cep}`
 - **Método**: `DELETE`
+- **Descrição**: Remove um endereço de determinado cliente pelo cep registrado e vinculado ao cpf.
   
 ### Parâmetros:
 {cpf}: CPF do cliente.
